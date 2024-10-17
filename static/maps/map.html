@@ -1,0 +1,1751 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d1fc2e502348ebafabe5dd213473ce9f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_d1fc2e502348ebafabe5dd213473ce9f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d1fc2e502348ebafabe5dd213473ce9f = L.map(
+                "map_d1fc2e502348ebafabe5dd213473ce9f",
+                {
+                    center: [18.5204, 73.8567],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5dc401099cdd5949dbb0c40de356acb9 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_5dc401099cdd5949dbb0c40de356acb9.addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+    
+            var marker_97125e4f986add48e616f829a9395868 = L.marker(
+                [18.5214325, 73.8676347],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_fd8effb334a478e21ea7f75597c035c2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3a76a63de43dd9d4df32b04299914d95 = $(`<div id="html_3a76a63de43dd9d4df32b04299914d95" style="width: 100.0%; height: 100.0%;">Kem Hospital Blood Bank</div>`)[0];
+                popup_fd8effb334a478e21ea7f75597c035c2.setContent(html_3a76a63de43dd9d4df32b04299914d95);
+            
+        
+
+        marker_97125e4f986add48e616f829a9395868.bindPopup(popup_fd8effb334a478e21ea7f75597c035c2)
+        ;
+
+        
+    
+    
+            var marker_f75952246851e3281bbd360f8da10c7b = L.marker(
+                [18.5173554, 73.8644877],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_39062decd6d8498b0d917c491aff77b7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_72759851e3d493325d20b452daf9f2e4 = $(`<div id="html_72759851e3d493325d20b452daf9f2e4" style="width: 100.0%; height: 100.0%;">Poona Serological Institute Blood Bank</div>`)[0];
+                popup_39062decd6d8498b0d917c491aff77b7.setContent(html_72759851e3d493325d20b452daf9f2e4);
+            
+        
+
+        marker_f75952246851e3281bbd360f8da10c7b.bindPopup(popup_39062decd6d8498b0d917c491aff77b7)
+        ;
+
+        
+    
+    
+            var marker_f5f98f0413739122ba130dfc6e1e0a3c = L.marker(
+                [18.5180621, 73.86355],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_615e46f019e43f538932aa8a13d6f8eb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fda8462e5d73abb018567e3c5c735806 = $(`<div id="html_fda8462e5d73abb018567e3c5c735806" style="width: 100.0%; height: 100.0%;">Indian Red Cross Society</div>`)[0];
+                popup_615e46f019e43f538932aa8a13d6f8eb.setContent(html_fda8462e5d73abb018567e3c5c735806);
+            
+        
+
+        marker_f5f98f0413739122ba130dfc6e1e0a3c.bindPopup(popup_615e46f019e43f538932aa8a13d6f8eb)
+        ;
+
+        
+    
+    
+            var marker_da64d6812b5c067046d249c78153fe17 = L.marker(
+                [18.5233939, 73.86420369999999],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_d2c7c8afac253070615038cd3228959f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_87c3faf4d193fe7ac0cbb8ca84649f27 = $(`<div id="html_87c3faf4d193fe7ac0cbb8ca84649f27" style="width: 100.0%; height: 100.0%;">Om Blood Bank</div>`)[0];
+                popup_d2c7c8afac253070615038cd3228959f.setContent(html_87c3faf4d193fe7ac0cbb8ca84649f27);
+            
+        
+
+        marker_da64d6812b5c067046d249c78153fe17.bindPopup(popup_d2c7c8afac253070615038cd3228959f)
+        ;
+
+        
+    
+    
+            var marker_5a356eaa4ee6d9074b362ed37ff2f078 = L.marker(
+                [18.5229483, 73.86230549999999],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_b9e1ae248188ec4d906b5f5950eca868 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f8cfe78a000c9de7e7db3ba91be1b04b = $(`<div id="html_f8cfe78a000c9de7e7db3ba91be1b04b" style="width: 100.0%; height: 100.0%;">Kai.Madhukar Sakharam Bidkar Blood Center</div>`)[0];
+                popup_b9e1ae248188ec4d906b5f5950eca868.setContent(html_f8cfe78a000c9de7e7db3ba91be1b04b);
+            
+        
+
+        marker_5a356eaa4ee6d9074b362ed37ff2f078.bindPopup(popup_b9e1ae248188ec4d906b5f5950eca868)
+        ;
+
+        
+    
+    
+            var marker_6535a8c30ac97016c6e4753168da3561 = L.marker(
+                [18.5264102, 73.87073459999999],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_de46ff6d5549e4ca3a3fc5549aef6b1c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3a882659d8822472ce2c28c1fd13db6f = $(`<div id="html_3a882659d8822472ce2c28c1fd13db6f" style="width: 100.0%; height: 100.0%;">Sasoon blood bank</div>`)[0];
+                popup_de46ff6d5549e4ca3a3fc5549aef6b1c.setContent(html_3a882659d8822472ce2c28c1fd13db6f);
+            
+        
+
+        marker_6535a8c30ac97016c6e4753168da3561.bindPopup(popup_de46ff6d5549e4ca3a3fc5549aef6b1c)
+        ;
+
+        
+    
+    
+            var marker_e77ab877cccd47f616360e66608778c4 = L.marker(
+                [18.5268251, 73.87188619999999],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_c3763a4f9d410ec132ae53bfc76ff7fe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9c833e59e65ec01ea20c745b66ed488d = $(`<div id="html_9c833e59e65ec01ea20c745b66ed488d" style="width: 100.0%; height: 100.0%;">Regional Blood Bank Sassoon General Hospital Pune</div>`)[0];
+                popup_c3763a4f9d410ec132ae53bfc76ff7fe.setContent(html_9c833e59e65ec01ea20c745b66ed488d);
+            
+        
+
+        marker_e77ab877cccd47f616360e66608778c4.bindPopup(popup_c3763a4f9d410ec132ae53bfc76ff7fe)
+        ;
+
+        
+    
+    
+            var marker_75aab322f7658c75469e16b8a262b156 = L.marker(
+                [18.5101104, 73.8693811],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_7c32d2b4d68ea58b3eaaf74e5f51cdba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bb2b88271f262811d95c9df91643a637 = $(`<div id="html_bb2b88271f262811d95c9df91643a637" style="width: 100.0%; height: 100.0%;">Global Care Diagnostic Services</div>`)[0];
+                popup_7c32d2b4d68ea58b3eaaf74e5f51cdba.setContent(html_bb2b88271f262811d95c9df91643a637);
+            
+        
+
+        marker_75aab322f7658c75469e16b8a262b156.bindPopup(popup_7c32d2b4d68ea58b3eaaf74e5f51cdba)
+        ;
+
+        
+    
+    
+            var marker_de7e7d6aa94ecb98624e6f3751c1cde1 = L.marker(
+                [18.533369, 73.8769389],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_f4ce2dc464f05710a65bc98d51f5b742 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_54f51f11849dfa25c935d100d7ea8b22 = $(`<div id="html_54f51f11849dfa25c935d100d7ea8b22" style="width: 100.0%; height: 100.0%;">Grant Medical Foundation A. H. Wadia Trust Blood Bank</div>`)[0];
+                popup_f4ce2dc464f05710a65bc98d51f5b742.setContent(html_54f51f11849dfa25c935d100d7ea8b22);
+            
+        
+
+        marker_de7e7d6aa94ecb98624e6f3751c1cde1.bindPopup(popup_f4ce2dc464f05710a65bc98d51f5b742)
+        ;
+
+        
+    
+    
+            var marker_6e64ce69f887a5c6409ef5e8c47de81a = L.marker(
+                [18.503984, 73.85998],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_74f76c4ab9f8e7bcb7490ce701dddd0a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_65827dacdf434763725fd91ad0cb888d = $(`<div id="html_65827dacdf434763725fd91ad0cb888d" style="width: 100.0%; height: 100.0%;">Raktache Nate Charitable Trust</div>`)[0];
+                popup_74f76c4ab9f8e7bcb7490ce701dddd0a.setContent(html_65827dacdf434763725fd91ad0cb888d);
+            
+        
+
+        marker_6e64ce69f887a5c6409ef5e8c47de81a.bindPopup(popup_74f76c4ab9f8e7bcb7490ce701dddd0a)
+        ;
+
+        
+    
+    
+            var marker_30b5f775338c167d1b4f4d5aac163797 = L.marker(
+                [18.5058553, 73.8535524],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_709de68938fbe7e7c49e5f75b47eccc7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_40a54856e3ad6db5a4dddaf508e6430f = $(`<div id="html_40a54856e3ad6db5a4dddaf508e6430f" style="width: 100.0%; height: 100.0%;">Janakalyan Blood Bank</div>`)[0];
+                popup_709de68938fbe7e7c49e5f75b47eccc7.setContent(html_40a54856e3ad6db5a4dddaf508e6430f);
+            
+        
+
+        marker_30b5f775338c167d1b4f4d5aac163797.bindPopup(popup_709de68938fbe7e7c49e5f75b47eccc7)
+        ;
+
+        
+    
+    
+            var marker_bff6ed70188c9d4885ef71068aad41ad = L.marker(
+                [18.5009187, 73.8575327],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_9225c44d84275ae5b8e507ca4e96adb6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_17fd72084f7bd24e3da6439f447154b9 = $(`<div id="html_17fd72084f7bd24e3da6439f447154b9" style="width: 100.0%; height: 100.0%;">Jankalyan Blood Centre</div>`)[0];
+                popup_9225c44d84275ae5b8e507ca4e96adb6.setContent(html_17fd72084f7bd24e3da6439f447154b9);
+            
+        
+
+        marker_bff6ed70188c9d4885ef71068aad41ad.bindPopup(popup_9225c44d84275ae5b8e507ca4e96adb6)
+        ;
+
+        
+    
+    
+            var marker_49b2f60a6aa029c53d5de32f172e7d39 = L.marker(
+                [18.500783, 73.857522],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_c21b3a762d87cd913e3d77fea3f275ce = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3076f8b4565bcbaa5f67b17d77cac01c = $(`<div id="html_3076f8b4565bcbaa5f67b17d77cac01c" style="width: 100.0%; height: 100.0%;">Janakalyan Raktapedhi's Bharat Vikas Parishad Pathology Laboratory</div>`)[0];
+                popup_c21b3a762d87cd913e3d77fea3f275ce.setContent(html_3076f8b4565bcbaa5f67b17d77cac01c);
+            
+        
+
+        marker_49b2f60a6aa029c53d5de32f172e7d39.bindPopup(popup_c21b3a762d87cd913e3d77fea3f275ce)
+        ;
+
+        
+    
+    
+            var marker_c92b0501f4f07d1c26694709e32eab7e = L.marker(
+                [18.5102201, 73.8467306],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_ce5afb8c1fa7f037b8490b63da14b429 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2d9346ebaea50d8f0a77fedfcf5eb6f9 = $(`<div id="html_2d9346ebaea50d8f0a77fedfcf5eb6f9" style="width: 100.0%; height: 100.0%;">Rakesh Jain Memorial Blood Bank</div>`)[0];
+                popup_ce5afb8c1fa7f037b8490b63da14b429.setContent(html_2d9346ebaea50d8f0a77fedfcf5eb6f9);
+            
+        
+
+        marker_c92b0501f4f07d1c26694709e32eab7e.bindPopup(popup_ce5afb8c1fa7f037b8490b63da14b429)
+        ;
+
+        
+    
+    
+            var marker_bae253b042f711a83655333b44d174f9 = L.marker(
+                [18.509054, 73.842317],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_4a1077433ff730017b9b153dc12f0653 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_797f927e550452982a8b01bd68f02a84 = $(`<div id="html_797f927e550452982a8b01bd68f02a84" style="width: 100.0%; height: 100.0%;">Acharya Anandrushiji Blood Bank</div>`)[0];
+                popup_4a1077433ff730017b9b153dc12f0653.setContent(html_797f927e550452982a8b01bd68f02a84);
+            
+        
+
+        marker_bae253b042f711a83655333b44d174f9.bindPopup(popup_4a1077433ff730017b9b153dc12f0653)
+        ;
+
+        
+    
+    
+            var marker_8351cd33cbe4d04447b766aa041b17a7 = L.marker(
+                [18.5052084, 73.8924823],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_977bc6d9d25bab40fce5320a013b4262 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2f4d4eac3c34af743b6457498a9f8a5d = $(`<div id="html_2f4d4eac3c34af743b6457498a9f8a5d" style="width: 100.0%; height: 100.0%;">Blood Bank, AFMC</div>`)[0];
+                popup_977bc6d9d25bab40fce5320a013b4262.setContent(html_2f4d4eac3c34af743b6457498a9f8a5d);
+            
+        
+
+        marker_8351cd33cbe4d04447b766aa041b17a7.bindPopup(popup_977bc6d9d25bab40fce5320a013b4262)
+        ;
+
+        
+    
+    
+            var marker_741cdde058789ddfe2b648776cb8d110 = L.marker(
+                [18.5061769, 73.8402936],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_71aad85b3179f6d8ec00608c29cff86c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_09be87ed3caab24e414a2b953da593d0 = $(`<div id="html_09be87ed3caab24e414a2b953da593d0" style="width: 100.0%; height: 100.0%;">Indian Serological Institute Blood Bank</div>`)[0];
+                popup_71aad85b3179f6d8ec00608c29cff86c.setContent(html_09be87ed3caab24e414a2b953da593d0);
+            
+        
+
+        marker_741cdde058789ddfe2b648776cb8d110.bindPopup(popup_71aad85b3179f6d8ec00608c29cff86c)
+        ;
+
+        
+    
+    
+            var marker_965e34d7a25431b31c389b2d03d9aa53 = L.marker(
+                [18.5061402, 73.84029269999999],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_59418d4cea64d036c0bc767f3e656cda = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bee7b9ccded29cbb340b2c7fd350a298 = $(`<div id="html_bee7b9ccded29cbb340b2c7fd350a298" style="width: 100.0%; height: 100.0%;">ISI</div>`)[0];
+                popup_59418d4cea64d036c0bc767f3e656cda.setContent(html_bee7b9ccded29cbb340b2c7fd350a298);
+            
+        
+
+        marker_965e34d7a25431b31c389b2d03d9aa53.bindPopup(popup_59418d4cea64d036c0bc767f3e656cda)
+        ;
+
+        
+    
+    
+            var marker_7770343fee43ab43c7cc61a6c227c506 = L.marker(
+                [18.4872127, 73.8570421],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_5659fdbe36d9861dc99864178f8959fb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6c6f3948003467bb4dfae3d59b7f80b5 = $(`<div id="html_6c6f3948003467bb4dfae3d59b7f80b5" style="width: 100.0%; height: 100.0%;">Gholap Blood Bank</div>`)[0];
+                popup_5659fdbe36d9861dc99864178f8959fb.setContent(html_6c6f3948003467bb4dfae3d59b7f80b5);
+            
+        
+
+        marker_7770343fee43ab43c7cc61a6c227c506.bindPopup(popup_5659fdbe36d9861dc99864178f8959fb)
+        ;
+
+        
+    
+    
+            var marker_652aa04316dee867083d13a78fdd3e8e = L.marker(
+                [18.5019606, 73.83297209999999],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_9d18ce0f3d8948230ee0a244f8d288ba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_566b9ec52d925c9b6354320064ce98cf = $(`<div id="html_566b9ec52d925c9b6354320064ce98cf" style="width: 100.0%; height: 100.0%;">Deenanath Mangeshkar Hospital Blood Bank</div>`)[0];
+                popup_9d18ce0f3d8948230ee0a244f8d288ba.setContent(html_566b9ec52d925c9b6354320064ce98cf);
+            
+        
+
+        marker_652aa04316dee867083d13a78fdd3e8e.bindPopup(popup_9d18ce0f3d8948230ee0a244f8d288ba)
+        ;
+
+        
+    
+    
+            var marker_7ccf7665f7db4ed1f9e6c06a5e1c8328 = L.marker(
+                [18.5560974, 73.87740889999999],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_10c06223543e19255a2a80b50accd571 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_404c52cb0c6ce1681eeb5726555bacdf = $(`<div id="html_404c52cb0c6ce1681eeb5726555bacdf" style="width: 100.0%; height: 100.0%;">Blood collection</div>`)[0];
+                popup_10c06223543e19255a2a80b50accd571.setContent(html_404c52cb0c6ce1681eeb5726555bacdf);
+            
+        
+
+        marker_7ccf7665f7db4ed1f9e6c06a5e1c8328.bindPopup(popup_10c06223543e19255a2a80b50accd571)
+        ;
+
+        
+    
+    
+            var marker_2bf92045075352761dcfe553c3528306 = L.marker(
+                [18.5033095, 73.8197888],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_f9a3b10e7fbe21340ef80815e2ec0ee7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0965680caedf695fa96c43007287bf3a = $(`<div id="html_0965680caedf695fa96c43007287bf3a" style="width: 100.0%; height: 100.0%;">Sahiyadari Speciality Hospital Blood Bank</div>`)[0];
+                popup_f9a3b10e7fbe21340ef80815e2ec0ee7.setContent(html_0965680caedf695fa96c43007287bf3a);
+            
+        
+
+        marker_2bf92045075352761dcfe553c3528306.bindPopup(popup_f9a3b10e7fbe21340ef80815e2ec0ee7)
+        ;
+
+        
+    
+    
+            var marker_91bedb0b89b52b2211cca7d18dd8ce39 = L.marker(
+                [18.486158, 73.907838],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_2d8f4587159a25838290daccaa8ecd4f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1183166c70517562eb2927e402d02128 = $(`<div id="html_1183166c70517562eb2927e402d02128" style="width: 100.0%; height: 100.0%;">Swamini Pratishthan Blood Donation Camp</div>`)[0];
+                popup_2d8f4587159a25838290daccaa8ecd4f.setContent(html_1183166c70517562eb2927e402d02128);
+            
+        
+
+        marker_91bedb0b89b52b2211cca7d18dd8ce39.bindPopup(popup_2d8f4587159a25838290daccaa8ecd4f)
+        ;
+
+        
+    
+    
+            var marker_a10bb8b62374ab91dabbcac266f39c0a = L.marker(
+                [18.4675352, 73.85588349999999],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_e34b442219e0e6b3b21bad85786a4d4d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_31cc554620d03de4275d3e3d1b393ba4 = $(`<div id="html_31cc554620d03de4275d3e3d1b393ba4" style="width: 100.0%; height: 100.0%;">Aadhar Blood Bank</div>`)[0];
+                popup_e34b442219e0e6b3b21bad85786a4d4d.setContent(html_31cc554620d03de4275d3e3d1b393ba4);
+            
+        
+
+        marker_a10bb8b62374ab91dabbcac266f39c0a.bindPopup(popup_e34b442219e0e6b3b21bad85786a4d4d)
+        ;
+
+        
+    
+    
+            var marker_9f00c24dace4b2301c4a10810decbd44 = L.marker(
+                [18.4594089, 73.856889],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_0092317eddc8be27a7250270fe837ade = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3269ee8812c17af5031c74a401367a46 = $(`<div id="html_3269ee8812c17af5031c74a401367a46" style="width: 100.0%; height: 100.0%;">emergency blood bank</div>`)[0];
+                popup_0092317eddc8be27a7250270fe837ade.setContent(html_3269ee8812c17af5031c74a401367a46);
+            
+        
+
+        marker_9f00c24dace4b2301c4a10810decbd44.bindPopup(popup_0092317eddc8be27a7250270fe837ade)
+        ;
+
+        
+    
+    
+            var marker_7e7c8812bcb6be055299bdc772b14e67 = L.marker(
+                [18.4840158, 73.8110708],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_fe55ed9f009d3eeba3ac1408edde3337 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_19a07293d6ec9cbc3fceced06b756b1d = $(`<div id="html_19a07293d6ec9cbc3fceced06b756b1d" style="width: 100.0%; height: 100.0%;">Rotary Club of Pune Warje</div>`)[0];
+                popup_fe55ed9f009d3eeba3ac1408edde3337.setContent(html_19a07293d6ec9cbc3fceced06b756b1d);
+            
+        
+
+        marker_7e7c8812bcb6be055299bdc772b14e67.bindPopup(popup_fe55ed9f009d3eeba3ac1408edde3337)
+        ;
+
+        
+    
+    
+            var marker_e9f4570a071adf3d01f269f332b7e92a = L.marker(
+                [18.4799294, 73.8098377],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_a618605e25e0c7d614d244d693b79718 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_874ca1f3a640af8044bae060cab54d54 = $(`<div id="html_874ca1f3a640af8044bae060cab54d54" style="width: 100.0%; height: 100.0%;">Life Lab</div>`)[0];
+                popup_a618605e25e0c7d614d244d693b79718.setContent(html_874ca1f3a640af8044bae060cab54d54);
+            
+        
+
+        marker_e9f4570a071adf3d01f269f332b7e92a.bindPopup(popup_a618605e25e0c7d614d244d693b79718)
+        ;
+
+        
+    
+    
+            var marker_4c48e0de27f9839dc5ad263059d58b14 = L.marker(
+                [18.5592452, 73.8030315],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_70c0954a24daa1566064944458e3895e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_53064d70a18db5c2c252947589bbfe2d = $(`<div id="html_53064d70a18db5c2c252947589bbfe2d" style="width: 100.0%; height: 100.0%;">Sai Shree Blood Storage Centre</div>`)[0];
+                popup_70c0954a24daa1566064944458e3895e.setContent(html_53064d70a18db5c2c252947589bbfe2d);
+            
+        
+
+        marker_4c48e0de27f9839dc5ad263059d58b14.bindPopup(popup_70c0954a24daa1566064944458e3895e)
+        ;
+
+        
+    
+    
+            var marker_8f4b5518383966f4759d482538d77839 = L.marker(
+                [18.4805092, 73.8029839],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_76c441d22962674ae452ba058ac34926 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1929e7f08114432032905f5cbc00d39b = $(`<div id="html_1929e7f08114432032905f5cbc00d39b" style="width: 100.0%; height: 100.0%;">Dr Amar Raykantiwar</div>`)[0];
+                popup_76c441d22962674ae452ba058ac34926.setContent(html_1929e7f08114432032905f5cbc00d39b);
+            
+        
+
+        marker_8f4b5518383966f4759d482538d77839.bindPopup(popup_76c441d22962674ae452ba058ac34926)
+        ;
+
+        
+    
+    
+            var marker_4000a7f87652c75e66c28397326f8779 = L.marker(
+                [18.4802837, 73.8028532],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_b7364c5d7a4e1b58f1b7d39020bf903e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6c98ba43da3fb7352800c8b076cc8798 = $(`<div id="html_6c98ba43da3fb7352800c8b076cc8798" style="width: 100.0%; height: 100.0%;">Mediline Laboratory</div>`)[0];
+                popup_b7364c5d7a4e1b58f1b7d39020bf903e.setContent(html_6c98ba43da3fb7352800c8b076cc8798);
+            
+        
+
+        marker_4000a7f87652c75e66c28397326f8779.bindPopup(popup_b7364c5d7a4e1b58f1b7d39020bf903e)
+        ;
+
+        
+    
+    
+            var marker_62d6bc018a61470b7e89cc7ce48f98a1 = L.marker(
+                [18.5022162, 73.9415077],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_3228ff82ad7490a22de0f16e36851633 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_44fa779e500515b4346b7854a9f40d73 = $(`<div id="html_44fa779e500515b4346b7854a9f40d73" style="width: 100.0%; height: 100.0%;">PUNE BLOOD BANK</div>`)[0];
+                popup_3228ff82ad7490a22de0f16e36851633.setContent(html_44fa779e500515b4346b7854a9f40d73);
+            
+        
+
+        marker_62d6bc018a61470b7e89cc7ce48f98a1.bindPopup(popup_3228ff82ad7490a22de0f16e36851633)
+        ;
+
+        
+    
+    
+            var marker_d510316a6a36f18d0722e4931cb44d51 = L.marker(
+                [18.4990437, 73.9412349],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_ffb4dfe8602699b7334afc9ce4492c48 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_853d94521deadcc67e93878d6a49b887 = $(`<div id="html_853d94521deadcc67e93878d6a49b887" style="width: 100.0%; height: 100.0%;">Akshay Blood Centre</div>`)[0];
+                popup_ffb4dfe8602699b7334afc9ce4492c48.setContent(html_853d94521deadcc67e93878d6a49b887);
+            
+        
+
+        marker_d510316a6a36f18d0722e4931cb44d51.bindPopup(popup_ffb4dfe8602699b7334afc9ce4492c48)
+        ;
+
+        
+    
+    
+            var marker_042e203f92bd271be35e75375a5f385c = L.marker(
+                [18.5008719, 73.9429502],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_f2ae630cff589ed4b9a88e596c91c521 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6b10dd59f8f4cd0b685c60f70c3ae559 = $(`<div id="html_6b10dd59f8f4cd0b685c60f70c3ae559" style="width: 100.0%; height: 100.0%;">Kranti Mitra Mandal Charitable Trust Blood Bank</div>`)[0];
+                popup_f2ae630cff589ed4b9a88e596c91c521.setContent(html_6b10dd59f8f4cd0b685c60f70c3ae559);
+            
+        
+
+        marker_042e203f92bd271be35e75375a5f385c.bindPopup(popup_f2ae630cff589ed4b9a88e596c91c521)
+        ;
+
+        
+    
+    
+            var marker_74a276ef18ff5f63cd998b22f993f991 = L.marker(
+                [18.5647451, 73.8022957],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_0f534174e007ba5b2f1615d47dad57b2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ef27cd8c3fcd9217f8aee724639d6ef7 = $(`<div id="html_ef27cd8c3fcd9217f8aee724639d6ef7" style="width: 100.0%; height: 100.0%;">Medipoint Blood Storage Centre</div>`)[0];
+                popup_0f534174e007ba5b2f1615d47dad57b2.setContent(html_ef27cd8c3fcd9217f8aee724639d6ef7);
+            
+        
+
+        marker_74a276ef18ff5f63cd998b22f993f991.bindPopup(popup_0f534174e007ba5b2f1615d47dad57b2)
+        ;
+
+        
+    
+    
+            var marker_68526d8567f0c3ce93208de29ec94d27 = L.marker(
+                [18.5624024, 73.93402189999999],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_8d8eded1e9f6a998a882fd36221d1f23 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6f8baa76f4e7423bca0c6a978ff9d3ab = $(`<div id="html_6f8baa76f4e7423bca0c6a978ff9d3ab" style="width: 100.0%; height: 100.0%;">Sanjeevan Blood Storage Centre</div>`)[0];
+                popup_8d8eded1e9f6a998a882fd36221d1f23.setContent(html_6f8baa76f4e7423bca0c6a978ff9d3ab);
+            
+        
+
+        marker_68526d8567f0c3ce93208de29ec94d27.bindPopup(popup_8d8eded1e9f6a998a882fd36221d1f23)
+        ;
+
+        
+    
+    
+            var marker_42411cf1b154d33b34c49e072c061dd8 = L.marker(
+                [18.5812473, 73.8184766],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_2c51f300d0fba388fb1b1db5a60edba5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_277ce544611ba1084b5afad933ec45de = $(`<div id="html_277ce544611ba1084b5afad933ec45de" style="width: 100.0%; height: 100.0%;">Onkar Hospital blood storage centre</div>`)[0];
+                popup_2c51f300d0fba388fb1b1db5a60edba5.setContent(html_277ce544611ba1084b5afad933ec45de);
+            
+        
+
+        marker_42411cf1b154d33b34c49e072c061dd8.bindPopup(popup_2c51f300d0fba388fb1b1db5a60edba5)
+        ;
+
+        
+    
+    
+            var marker_8031da005d9fd0dd1b29fd023575d451 = L.marker(
+                [18.4562452, 73.8222104],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_2db7646bf483bb31de99b5af199b56fb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_67870aad0ed49ad61bb54c2ca1c9bc4c = $(`<div id="html_67870aad0ed49ad61bb54c2ca1c9bc4c" style="width: 100.0%; height: 100.0%;">Smt. Kashibai Navale General Hospital Blood Bank</div>`)[0];
+                popup_2db7646bf483bb31de99b5af199b56fb.setContent(html_67870aad0ed49ad61bb54c2ca1c9bc4c);
+            
+        
+
+        marker_8031da005d9fd0dd1b29fd023575d451.bindPopup(popup_2db7646bf483bb31de99b5af199b56fb)
+        ;
+
+        
+    
+    
+            var marker_169d9c5218da7ecb1828ff836ac34288 = L.marker(
+                [18.4435782, 73.8841905],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_0a9196bb1d01de83cea8a953b1e81a1a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_65c314dd3f9cc52945d696d812205f2e = $(`<div id="html_65c314dd3f9cc52945d696d812205f2e" style="width: 100.0%; height: 100.0%;">Bloodheal</div>`)[0];
+                popup_0a9196bb1d01de83cea8a953b1e81a1a.setContent(html_65c314dd3f9cc52945d696d812205f2e);
+            
+        
+
+        marker_169d9c5218da7ecb1828ff836ac34288.bindPopup(popup_0a9196bb1d01de83cea8a953b1e81a1a)
+        ;
+
+        
+    
+    
+            var marker_f92535e16528c77da46fc2d108e2eb45 = L.marker(
+                [18.4697282, 73.9359283],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_662bae157cea571f0352b92389c5da13 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_46df87b079695aed1071e7315ea123d5 = $(`<div id="html_46df87b079695aed1071e7315ea123d5" style="width: 100.0%; height: 100.0%;">Spread Happiness Foundation</div>`)[0];
+                popup_662bae157cea571f0352b92389c5da13.setContent(html_46df87b079695aed1071e7315ea123d5);
+            
+        
+
+        marker_f92535e16528c77da46fc2d108e2eb45.bindPopup(popup_662bae157cea571f0352b92389c5da13)
+        ;
+
+        
+    
+    
+            var marker_aa36387e24843c64fd18bea5267ca679 = L.marker(
+                [18.5999867, 73.9069452],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_9812eee75b0359dd9ee32bcfd79da21e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9b9fefc93c0fae22543619cc36a7354d = $(`<div id="html_9b9fefc93c0fae22543619cc36a7354d" style="width: 100.0%; height: 100.0%;">Shivneri Blood Centre</div>`)[0];
+                popup_9812eee75b0359dd9ee32bcfd79da21e.setContent(html_9b9fefc93c0fae22543619cc36a7354d);
+            
+        
+
+        marker_aa36387e24843c64fd18bea5267ca679.bindPopup(popup_9812eee75b0359dd9ee32bcfd79da21e)
+        ;
+
+        
+    
+    
+            var marker_36a4342908cf4a2227fa1069f6ea041f = L.marker(
+                [18.6164347, 73.8482075],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_1d00cbaab03fab208b3ada62f5c4eedc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9f3e201d931c4cb458e9962b5f8955c6 = $(`<div id="html_9f3e201d931c4cb458e9962b5f8955c6" style="width: 100.0%; height: 100.0%;">SANJEEVANI BLOOD CENTRE (संजीवनी रक्तपेढी)</div>`)[0];
+                popup_1d00cbaab03fab208b3ada62f5c4eedc.setContent(html_9f3e201d931c4cb458e9962b5f8955c6);
+            
+        
+
+        marker_36a4342908cf4a2227fa1069f6ea041f.bindPopup(popup_1d00cbaab03fab208b3ada62f5c4eedc)
+        ;
+
+        
+    
+    
+            var marker_2004997b0168a0ac78a7e5c895582d34 = L.marker(
+                [18.5721173, 73.9546483],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_5051b7a6e466e9c5c6fff9c049dd0f4c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2d14869e24a1cac2f013965dbbb4f220 = $(`<div id="html_2d14869e24a1cac2f013965dbbb4f220" style="width: 100.0%; height: 100.0%;">Life Care Laboratory Jeevan Rakshak Hospital Khandve Nagar Wagholi</div>`)[0];
+                popup_5051b7a6e466e9c5c6fff9c049dd0f4c.setContent(html_2d14869e24a1cac2f013965dbbb4f220);
+            
+        
+
+        marker_2004997b0168a0ac78a7e5c895582d34.bindPopup(popup_5051b7a6e466e9c5c6fff9c049dd0f4c)
+        ;
+
+        
+    
+    
+            var marker_2abc01d4db8f507addf9f599ddf9da0e = L.marker(
+                [18.6215764, 73.8504033],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_5b07844429cc9c56ea9fc3d38da2c7c4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a8378a26484330edbae2744efcd2caa4 = $(`<div id="html_a8378a26484330edbae2744efcd2caa4" style="width: 100.0%; height: 100.0%;">Red plus Blood Bank</div>`)[0];
+                popup_5b07844429cc9c56ea9fc3d38da2c7c4.setContent(html_a8378a26484330edbae2744efcd2caa4);
+            
+        
+
+        marker_2abc01d4db8f507addf9f599ddf9da0e.bindPopup(popup_5b07844429cc9c56ea9fc3d38da2c7c4)
+        ;
+
+        
+    
+    
+            var marker_5fe1be7d0d43d9f6f6bd0ba3f8988cce = L.marker(
+                [18.6191291, 73.822586],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_389226a6172c377979e57865ca2c5566 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d0078f6f7ea62ff44dae8921edf0bff7 = $(`<div id="html_d0078f6f7ea62ff44dae8921edf0bff7" style="width: 100.0%; height: 100.0%;">Pimpri chinchwad Blood service 24×7</div>`)[0];
+                popup_389226a6172c377979e57865ca2c5566.setContent(html_d0078f6f7ea62ff44dae8921edf0bff7);
+            
+        
+
+        marker_5fe1be7d0d43d9f6f6bd0ba3f8988cce.bindPopup(popup_389226a6172c377979e57865ca2c5566)
+        ;
+
+        
+    
+    
+            var marker_076a2fd18537c5718cf74adabef3a7d9 = L.marker(
+                [18.6239398, 73.8220146],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_a50d8af964c236fda0b0345b2a4d6d1e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f13b8063e5a8b3da7ea578db8d35fd1f = $(`<div id="html_f13b8063e5a8b3da7ea578db8d35fd1f" style="width: 100.0%; height: 100.0%;">Dr. D. Y. Patil Hospital Blood Bank</div>`)[0];
+                popup_a50d8af964c236fda0b0345b2a4d6d1e.setContent(html_f13b8063e5a8b3da7ea578db8d35fd1f);
+            
+        
+
+        marker_076a2fd18537c5718cf74adabef3a7d9.bindPopup(popup_a50d8af964c236fda0b0345b2a4d6d1e)
+        ;
+
+        
+    
+    
+            var marker_90bf6f6e232effdcdb38415027124b83 = L.marker(
+                [18.6231091, 73.8198728],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_243159db0934a07f47ef386b4f6c2070 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b23253f5c4bb44c009f0e03be0dfa4fd = $(`<div id="html_b23253f5c4bb44c009f0e03be0dfa4fd" style="width: 100.0%; height: 100.0%;">YCM BLOOD BANK</div>`)[0];
+                popup_243159db0934a07f47ef386b4f6c2070.setContent(html_b23253f5c4bb44c009f0e03be0dfa4fd);
+            
+        
+
+        marker_90bf6f6e232effdcdb38415027124b83.bindPopup(popup_243159db0934a07f47ef386b4f6c2070)
+        ;
+
+        
+    
+    
+            var marker_2aa416fd51af98b474af7063d59731b1 = L.marker(
+                [18.6242741, 73.807926],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_23fca057b202ebffbfa025722df8dac4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b687c725c2dc314eb28e4ee0473a858e = $(`<div id="html_b687c725c2dc314eb28e4ee0473a858e" style="width: 100.0%; height: 100.0%;">Pimpri Serological Institute Blood Center</div>`)[0];
+                popup_23fca057b202ebffbfa025722df8dac4.setContent(html_b687c725c2dc314eb28e4ee0473a858e);
+            
+        
+
+        marker_2aa416fd51af98b474af7063d59731b1.bindPopup(popup_23fca057b202ebffbfa025722df8dac4)
+        ;
+
+        
+    
+    
+            var marker_397fb9c0d8a9cf46dfd6fde2d4483367 = L.marker(
+                [18.5763567, 73.9782465],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_2c562409363e1f878947a36bff3b2c38 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3be877f7e1db794ffbb4a971bd3db870 = $(`<div id="html_3be877f7e1db794ffbb4a971bd3db870" style="width: 100.0%; height: 100.0%;">Galaxy pathology laboratory</div>`)[0];
+                popup_2c562409363e1f878947a36bff3b2c38.setContent(html_3be877f7e1db794ffbb4a971bd3db870);
+            
+        
+
+        marker_397fb9c0d8a9cf46dfd6fde2d4483367.bindPopup(popup_2c562409363e1f878947a36bff3b2c38)
+        ;
+
+        
+    
+    
+            var marker_2abb939a0802f03ed96f115864c80995 = L.marker(
+                [18.621785, 73.7959503],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_697c07a542ff6aa9d4014a31f1e6866f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3e0d437845bcb9c80a8249e7e07f8f20 = $(`<div id="html_3e0d437845bcb9c80a8249e7e07f8f20" style="width: 100.0%; height: 100.0%;">DIAGNOSTICS SERVICES</div>`)[0];
+                popup_697c07a542ff6aa9d4014a31f1e6866f.setContent(html_3e0d437845bcb9c80a8249e7e07f8f20);
+            
+        
+
+        marker_2abb939a0802f03ed96f115864c80995.bindPopup(popup_697c07a542ff6aa9d4014a31f1e6866f)
+        ;
+
+        
+    
+    
+            var marker_f8e68aa614d9a6b5fbe9d98ddd41749d = L.marker(
+                [18.5874764, 73.75788399999999],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_e341878ee5c26e26866aca76d0ac0120 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2fc550958ed25941d29f58c032fb5e13 = $(`<div id="html_2fc550958ed25941d29f58c032fb5e13" style="width: 100.0%; height: 100.0%;">Surya blood bank</div>`)[0];
+                popup_e341878ee5c26e26866aca76d0ac0120.setContent(html_2fc550958ed25941d29f58c032fb5e13);
+            
+        
+
+        marker_f8e68aa614d9a6b5fbe9d98ddd41749d.bindPopup(popup_e341878ee5c26e26866aca76d0ac0120)
+        ;
+
+        
+    
+    
+            var marker_ce1c29c4d9a13db5cd9ec50f5f71a992 = L.marker(
+                [18.6319231, 73.8045439],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_a4a0121ac10e20679364562ba4f4749c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5ad666c8fd5edaa30ad7169a73d69b20 = $(`<div id="html_5ad666c8fd5edaa30ad7169a73d69b20" style="width: 100.0%; height: 100.0%;">Shree Sidhi Blood Bank</div>`)[0];
+                popup_a4a0121ac10e20679364562ba4f4749c.setContent(html_5ad666c8fd5edaa30ad7169a73d69b20);
+            
+        
+
+        marker_ce1c29c4d9a13db5cd9ec50f5f71a992.bindPopup(popup_a4a0121ac10e20679364562ba4f4749c)
+        ;
+
+        
+    
+    
+            var marker_8adf48d729f0734a47778a5ad55b94af = L.marker(
+                [18.5836238, 73.9866773],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_0be61c7bc43f3d8b65e09ace6f43a11a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_84822568cc4a4775e5774d79beadb174 = $(`<div id="html_84822568cc4a4775e5774d79beadb174" style="width: 100.0%; height: 100.0%;">Thyrocare Aarogyam Center</div>`)[0];
+                popup_0be61c7bc43f3d8b65e09ace6f43a11a.setContent(html_84822568cc4a4775e5774d79beadb174);
+            
+        
+
+        marker_8adf48d729f0734a47778a5ad55b94af.bindPopup(popup_0be61c7bc43f3d8b65e09ace6f43a11a)
+        ;
+
+        
+    
+    
+            var marker_c72851d4377edd97269c71054572fbcf = L.marker(
+                [18.6112615, 73.7687636],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_dafdba3aded6e3a384671788f2e782ad = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_41b9ad3051ea0474aefa78829d0c5b31 = $(`<div id="html_41b9ad3051ea0474aefa78829d0c5b31" style="width: 100.0%; height: 100.0%;">Pune Chest And General Hospital Blood Bank</div>`)[0];
+                popup_dafdba3aded6e3a384671788f2e782ad.setContent(html_41b9ad3051ea0474aefa78829d0c5b31);
+            
+        
+
+        marker_c72851d4377edd97269c71054572fbcf.bindPopup(popup_dafdba3aded6e3a384671788f2e782ad)
+        ;
+
+        
+    
+    
+            var marker_9c607ac14ef7f895101b00a50b9e5211 = L.marker(
+                [18.5812235, 73.98849849999999],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_fdebc4989a2eeef220d4f8c25deb2c3d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_acf7932c9c5d565b77402cf2289d2b14 = $(`<div id="html_acf7932c9c5d565b77402cf2289d2b14" style="width: 100.0%; height: 100.0%;">Micro pathology laboratory wagholi</div>`)[0];
+                popup_fdebc4989a2eeef220d4f8c25deb2c3d.setContent(html_acf7932c9c5d565b77402cf2289d2b14);
+            
+        
+
+        marker_9c607ac14ef7f895101b00a50b9e5211.bindPopup(popup_fdebc4989a2eeef220d4f8c25deb2c3d)
+        ;
+
+        
+    
+    
+            var marker_83b8482ae08739dbc31baf89ac692c0b = L.marker(
+                [18.6257716, 73.7845569],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_b1d9b134763ca151262df1e5023683ad = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8d8cc2b6bf611b470bc0c8257617d0c9 = $(`<div id="html_8d8cc2b6bf611b470bc0c8257617d0c9" style="width: 100.0%; height: 100.0%;">Krantiveer Chapekar Bandhu Blood Bank</div>`)[0];
+                popup_b1d9b134763ca151262df1e5023683ad.setContent(html_8d8cc2b6bf611b470bc0c8257617d0c9);
+            
+        
+
+        marker_83b8482ae08739dbc31baf89ac692c0b.bindPopup(popup_b1d9b134763ca151262df1e5023683ad)
+        ;
+
+        
+    
+    
+            var marker_643eda21a0669dfd29857ac217856d9d = L.marker(
+                [18.5827705, 73.9897873],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_df01c18abdc655ba04babe864133cd84 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b14f9a8460d99b8ac13293234d8bf1fe = $(`<div id="html_b14f9a8460d99b8ac13293234d8bf1fe" style="width: 100.0%; height: 100.0%;">HDFC Bank</div>`)[0];
+                popup_df01c18abdc655ba04babe864133cd84.setContent(html_b14f9a8460d99b8ac13293234d8bf1fe);
+            
+        
+
+        marker_643eda21a0669dfd29857ac217856d9d.bindPopup(popup_df01c18abdc655ba04babe864133cd84)
+        ;
+
+        
+    
+    
+            var marker_9e2a4486c660fbb15e3256e02d4be408 = L.marker(
+                [18.6259885, 73.7748352],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_f39ba1e1f05ba4070eb5e6d2fd8be6de = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ee40d194c3d501a6abe2b1105485d15e = $(`<div id="html_ee40d194c3d501a6abe2b1105485d15e" style="width: 100.0%; height: 100.0%;">Aditya Birla Memorial Hospital Blood Centre</div>`)[0];
+                popup_f39ba1e1f05ba4070eb5e6d2fd8be6de.setContent(html_ee40d194c3d501a6abe2b1105485d15e);
+            
+        
+
+        marker_9e2a4486c660fbb15e3256e02d4be408.bindPopup(popup_f39ba1e1f05ba4070eb5e6d2fd8be6de)
+        ;
+
+        
+    
+    
+            var marker_e214ced21fe443fbc5625416cb41005c = L.marker(
+                [18.6447756, 73.7996539],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_dc62b13722d3405d6ba5694db56f36fe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c940b2d73663a89bea81d07b88f015f0 = $(`<div id="html_c940b2d73663a89bea81d07b88f015f0" style="width: 100.0%; height: 100.0%;">Moraya Blood Bank</div>`)[0];
+                popup_dc62b13722d3405d6ba5694db56f36fe.setContent(html_c940b2d73663a89bea81d07b88f015f0);
+            
+        
+
+        marker_e214ced21fe443fbc5625416cb41005c.bindPopup(popup_dc62b13722d3405d6ba5694db56f36fe)
+        ;
+
+        
+    
+    
+            var marker_eed5d2b5f80f5bd1902a5543f6d05f15 = L.marker(
+                [18.5909285, 74.002093],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_33baffd1908b04786e1d33c1aba6cd03 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7a6b4073c23acc90d58825581f464fae = $(`<div id="html_7a6b4073c23acc90d58825581f464fae" style="width: 100.0%; height: 100.0%;">Rudra pathology lab</div>`)[0];
+                popup_33baffd1908b04786e1d33c1aba6cd03.setContent(html_7a6b4073c23acc90d58825581f464fae);
+            
+        
+
+        marker_eed5d2b5f80f5bd1902a5543f6d05f15.bindPopup(popup_33baffd1908b04786e1d33c1aba6cd03)
+        ;
+
+        
+    
+    
+            var marker_b9f5157588c391b25b1ab50137956e94 = L.marker(
+                [18.6600207, 73.8139844],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_b5a8829c2069bdb8477415ddb9b73e72 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e90652125ad31f6abfe4bad73fc4de47 = $(`<div id="html_e90652125ad31f6abfe4bad73fc4de47" style="width: 100.0%; height: 100.0%;">Jeevan Pani</div>`)[0];
+                popup_b5a8829c2069bdb8477415ddb9b73e72.setContent(html_e90652125ad31f6abfe4bad73fc4de47);
+            
+        
+
+        marker_b9f5157588c391b25b1ab50137956e94.bindPopup(popup_b5a8829c2069bdb8477415ddb9b73e72)
+        ;
+
+        
+    
+    
+            var marker_7a3c0f40f88da01f5b216bf5b538d942 = L.marker(
+                [18.4895245, 74.02262739999999],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_e253f3930de85ace829aad7b37a7b49d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6420628cb706a035e20f4d26d860a035 = $(`<div id="html_6420628cb706a035e20f4d26d860a035" style="width: 100.0%; height: 100.0%;">TARPAN BLOOD BANK</div>`)[0];
+                popup_e253f3930de85ace829aad7b37a7b49d.setContent(html_6420628cb706a035e20f4d26d860a035);
+            
+        
+
+        marker_7a3c0f40f88da01f5b216bf5b538d942.bindPopup(popup_e253f3930de85ace829aad7b37a7b49d)
+        ;
+
+        
+    
+    
+            var marker_b3326b7d1977e8759c1d2e1fc0447607 = L.marker(
+                [18.6944348, 73.8119727],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_d675dc7faff7eb4a3cc1d49bedfc4a3d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_144b06c04e561142fafb6e51e214d6b3 = $(`<div id="html_144b06c04e561142fafb6e51e214d6b3" style="width: 100.0%; height: 100.0%;">Mistywoods Blood Bank</div>`)[0];
+                popup_d675dc7faff7eb4a3cc1d49bedfc4a3d.setContent(html_144b06c04e561142fafb6e51e214d6b3);
+            
+        
+
+        marker_b3326b7d1977e8759c1d2e1fc0447607.bindPopup(popup_d675dc7faff7eb4a3cc1d49bedfc4a3d)
+        ;
+
+        
+    
+    
+            var marker_f9e4d3a007f7be2e31579da0c3f16000 = L.marker(
+                [18.6970637, 73.79175959999999],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_6fa09375329e3a0ce0b4988adbd39861 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1f8ffff44dbb3b676057c9a7e8eed6a4 = $(`<div id="html_1f8ffff44dbb3b676057c9a7e8eed6a4" style="width: 100.0%; height: 100.0%;">Shree Sai Girl's PG</div>`)[0];
+                popup_6fa09375329e3a0ce0b4988adbd39861.setContent(html_1f8ffff44dbb3b676057c9a7e8eed6a4);
+            
+        
+
+        marker_f9e4d3a007f7be2e31579da0c3f16000.bindPopup(popup_6fa09375329e3a0ce0b4988adbd39861)
+        ;
+
+        
+    
+    
+            var marker_8fe96ad13f265c6a966b6e3a0c58c3d1 = L.marker(
+                [18.6804657, 73.7312752],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_780850343e1e95f39f1ceb91093f16f5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_551b2ab24673eeb1a08fbc3f0ecaa98a = $(`<div id="html_551b2ab24673eeb1a08fbc3f0ecaa98a" style="width: 100.0%; height: 100.0%;">AUTUS BLOOD CENTER</div>`)[0];
+                popup_780850343e1e95f39f1ceb91093f16f5.setContent(html_551b2ab24673eeb1a08fbc3f0ecaa98a);
+            
+        
+
+        marker_8fe96ad13f265c6a966b6e3a0c58c3d1.bindPopup(popup_780850343e1e95f39f1ceb91093f16f5)
+        ;
+
+        
+    
+    
+            var marker_f7555800a38e325858e2355391d9b236 = L.marker(
+                [18.7564155, 73.860755],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_82a99fad795364b916fd9788dc6c5b93 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f2f38a0f9bfa3cdb0854d240b864ed9d = $(`<div id="html_f2f38a0f9bfa3cdb0854d240b864ed9d" style="width: 100.0%; height: 100.0%;">Medlab</div>`)[0];
+                popup_82a99fad795364b916fd9788dc6c5b93.setContent(html_f2f38a0f9bfa3cdb0854d240b864ed9d);
+            
+        
+
+        marker_f7555800a38e325858e2355391d9b236.bindPopup(popup_82a99fad795364b916fd9788dc6c5b93)
+        ;
+
+        
+    
+    
+            var marker_92a8fa216340d6f8f1e144d66c20934f = L.marker(
+                [18.766241, 73.858847],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_784fb1bddf6a5f82435234efb37e6959 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0703c44adf428eb9708cd706842c8831 = $(`<div id="html_0703c44adf428eb9708cd706842c8831" style="width: 100.0%; height: 100.0%;">CHAKAN BLOOD CENTRE</div>`)[0];
+                popup_784fb1bddf6a5f82435234efb37e6959.setContent(html_0703c44adf428eb9708cd706842c8831);
+            
+        
+
+        marker_92a8fa216340d6f8f1e144d66c20934f.bindPopup(popup_784fb1bddf6a5f82435234efb37e6959)
+        ;
+
+        
+    
+    
+            var marker_90d5162d68e68ef80dd1ae5d003b29f2 = L.marker(
+                [18.7350966, 73.6756012],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_979f2c0939a2883b12c16772f3348ad1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_87930b8bdac26e2cc43bfd35d3770ddc = $(`<div id="html_87930b8bdac26e2cc43bfd35d3770ddc" style="width: 100.0%; height: 100.0%;">Garware Blood Bank</div>`)[0];
+                popup_979f2c0939a2883b12c16772f3348ad1.setContent(html_87930b8bdac26e2cc43bfd35d3770ddc);
+            
+        
+
+        marker_90d5162d68e68ef80dd1ae5d003b29f2.bindPopup(popup_979f2c0939a2883b12c16772f3348ad1)
+        ;
+
+        
+    
+    
+            var marker_74bacb0fda3d89a21d9f3b5f1e6d85ce = L.marker(
+                [18.6976865, 74.1413159],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_c3f4726f77a8a1cc1e9a847d8682e237 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_326ae9c7a7e112ea49e6e474eb918f05 = $(`<div id="html_326ae9c7a7e112ea49e6e474eb918f05" style="width: 100.0%; height: 100.0%;">Surya Blood Storage Centre</div>`)[0];
+                popup_c3f4726f77a8a1cc1e9a847d8682e237.setContent(html_326ae9c7a7e112ea49e6e474eb918f05);
+            
+        
+
+        marker_74bacb0fda3d89a21d9f3b5f1e6d85ce.bindPopup(popup_c3f4726f77a8a1cc1e9a847d8682e237)
+        ;
+
+        
+    
+    
+            var marker_a717ef7ab1e96dc6d6610385f02c731d = L.marker(
+                [18.561337, 74.37181799999999],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_53ebe76fb0e6611e8a78c7d286b406a1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8afa91d502e6ff92ed983a4adf444aa7 = $(`<div id="html_8afa91d502e6ff92ed983a4adf444aa7" style="width: 100.0%; height: 100.0%;">Sandeep Kale</div>`)[0];
+                popup_53ebe76fb0e6611e8a78c7d286b406a1.setContent(html_8afa91d502e6ff92ed983a4adf444aa7);
+            
+        
+
+        marker_a717ef7ab1e96dc6d6610385f02c731d.bindPopup(popup_53ebe76fb0e6611e8a78c7d286b406a1)
+        ;
+
+        
+    
+    
+            var marker_e9efa357dbdd5933970da9444495fdde = L.marker(
+                [19.0059502, 73.9470903],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_533db37eb603549b75520d4741bb518b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5e395df5ecb0cbb8121a17b658321586 = $(`<div id="html_5e395df5ecb0cbb8121a17b658321586" style="width: 100.0%; height: 100.0%;">Shivneri blood centre</div>`)[0];
+                popup_533db37eb603549b75520d4741bb518b.setContent(html_5e395df5ecb0cbb8121a17b658321586);
+            
+        
+
+        marker_e9efa357dbdd5933970da9444495fdde.bindPopup(popup_533db37eb603549b75520d4741bb518b)
+        ;
+
+        
+    
+    
+            var marker_104d0cf7a418e6e36203adc4a9c0f3b7 = L.marker(
+                [18.8263986, 74.3798034],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_eb566aa60860736d6a5789c6628bfa72 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_809e02e640b2ce4ec7be4f3128ee3985 = $(`<div id="html_809e02e640b2ce4ec7be4f3128ee3985" style="width: 100.0%; height: 100.0%;">Vedanta Blood Bank</div>`)[0];
+                popup_eb566aa60860736d6a5789c6628bfa72.setContent(html_809e02e640b2ce4ec7be4f3128ee3985);
+            
+        
+
+        marker_104d0cf7a418e6e36203adc4a9c0f3b7.bindPopup(popup_eb566aa60860736d6a5789c6628bfa72)
+        ;
+
+        
+    
+    
+            var marker_2af21a40e5e13e373ad48de52f59bf5d = L.marker(
+                [18.0827353, 73.4226501],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_91b36dec001b8a1061f5568687547f86 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_868d082bdf297cf4505fc129a29b6df0 = $(`<div id="html_868d082bdf297cf4505fc129a29b6df0" style="width: 100.0%; height: 100.0%;">Jankalyan Blood Bank, Mahad</div>`)[0];
+                popup_91b36dec001b8a1061f5568687547f86.setContent(html_868d082bdf297cf4505fc129a29b6df0);
+            
+        
+
+        marker_2af21a40e5e13e373ad48de52f59bf5d.bindPopup(popup_91b36dec001b8a1061f5568687547f86)
+        ;
+
+        
+    
+    
+            var marker_7cedc2b0244ce73dc8e87b147961e1ee = L.marker(
+                [19.1217177, 73.9745116],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_58bfd921ea33aa9cd0b47013c2e06154 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_34283fd6d96e48a70f82bb5e785883ab = $(`<div id="html_34283fd6d96e48a70f82bb5e785883ab" style="width: 100.0%; height: 100.0%;">Poona Blood Center</div>`)[0];
+                popup_58bfd921ea33aa9cd0b47013c2e06154.setContent(html_34283fd6d96e48a70f82bb5e785883ab);
+            
+        
+
+        marker_7cedc2b0244ce73dc8e87b147961e1ee.bindPopup(popup_58bfd921ea33aa9cd0b47013c2e06154)
+        ;
+
+        
+    
+    
+            var marker_ca4a810e82d78a7572a35d0f04efa562 = L.marker(
+                [18.235744, 73.281672],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_71fcd513e58eae0f916b786ec4fc321e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0956128b885283543e82bd4b36163313 = $(`<div id="html_0956128b885283543e82bd4b36163313" style="width: 100.0%; height: 100.0%;">M. B. More Foundation Blood Bank</div>`)[0];
+                popup_71fcd513e58eae0f916b786ec4fc321e.setContent(html_0956128b885283543e82bd4b36163313);
+            
+        
+
+        marker_ca4a810e82d78a7572a35d0f04efa562.bindPopup(popup_71fcd513e58eae0f916b786ec4fc321e)
+        ;
+
+        
+    
+    
+            var marker_1985e27b9285472bab2fdd833048591c = L.marker(
+                [18.0849683, 74.7927955],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_2d35db9c8f67f363be21cbd0f34e429f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ff895e44c9139bb8b2619b93c6309773 = $(`<div id="html_ff895e44c9139bb8b2619b93c6309773" style="width: 100.0%; height: 100.0%;">Shiv nandan hospital blood storage center</div>`)[0];
+                popup_2d35db9c8f67f363be21cbd0f34e429f.setContent(html_ff895e44c9139bb8b2619b93c6309773);
+            
+        
+
+        marker_1985e27b9285472bab2fdd833048591c.bindPopup(popup_2d35db9c8f67f363be21cbd0f34e429f)
+        ;
+
+        
+    
+    
+            var marker_fa891a09665e14fded3c00a94e9a4bc5 = L.marker(
+                [18.1196442, 75.0254628],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_cab0cf85ba2d8b1b3252173b0a9c680b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e4277619fbd646f2d0f77c56820f9937 = $(`<div id="html_e4277619fbd646f2d0f77c56820f9937" style="width: 100.0%; height: 100.0%;">Muktai Blood Center</div>`)[0];
+                popup_cab0cf85ba2d8b1b3252173b0a9c680b.setContent(html_e4277619fbd646f2d0f77c56820f9937);
+            
+        
+
+        marker_fa891a09665e14fded3c00a94e9a4bc5.bindPopup(popup_cab0cf85ba2d8b1b3252173b0a9c680b)
+        ;
+
+        
+    
+    
+            var marker_a246235b34f3088dde43b9adec195934 = L.marker(
+                [18.1179951, 75.0294919],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_ce713e1643244d6439930c396bb7882a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_99b40f0fec6d3d769fba3493937cf02c = $(`<div id="html_99b40f0fec6d3d769fba3493937cf02c" style="width: 100.0%; height: 100.0%;">N. R. SHAH BLOOD BANK</div>`)[0];
+                popup_ce713e1643244d6439930c396bb7882a.setContent(html_99b40f0fec6d3d769fba3493937cf02c);
+            
+        
+
+        marker_a246235b34f3088dde43b9adec195934.bindPopup(popup_ce713e1643244d6439930c396bb7882a)
+        ;
+
+        
+    
+    
+            var marker_4b76c2486b415a30886216db86b9ac91 = L.marker(
+                [17.871551, 75.007531],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_c0053730e0b448059262c57709f7c8c4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9f573ae6efd237d98daf979443f0ffd7 = $(`<div id="html_9f573ae6efd237d98daf979443f0ffd7" style="width: 100.0%; height: 100.0%;">IMA - Sahakar Maharshi Shankarrao Mohite Patil Blood Bank</div>`)[0];
+                popup_c0053730e0b448059262c57709f7c8c4.setContent(html_9f573ae6efd237d98daf979443f0ffd7);
+            
+        
+
+        marker_4b76c2486b415a30886216db86b9ac91.bindPopup(popup_c0053730e0b448059262c57709f7c8c4)
+        ;
+
+        
+    
+    
+            var marker_7cda3a837c372047f826d7052028b525 = L.marker(
+                [17.8875182, 75.0235436],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_546bdd5d14eb6ae2719589658ffdf59e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eb2a29f7983fb212a97fa5fa67db6596 = $(`<div id="html_eb2a29f7983fb212a97fa5fa67db6596" style="width: 100.0%; height: 100.0%;">Sahakar Maharshi Shankarrao Mohite Patil Blood bank</div>`)[0];
+                popup_546bdd5d14eb6ae2719589658ffdf59e.setContent(html_eb2a29f7983fb212a97fa5fa67db6596);
+            
+        
+
+        marker_7cda3a837c372047f826d7052028b525.bindPopup(popup_546bdd5d14eb6ae2719589658ffdf59e)
+        ;
+
+        
+    
+    
+            var marker_ad41059cd2ceec744b04ad1d5808b61f = L.marker(
+                [21.0680074, 82.7525294],
+                {}
+            ).addTo(map_d1fc2e502348ebafabe5dd213473ce9f);
+        
+    
+        var popup_395476fbbef523a3e513f0ded62f1bae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6ef6a3cf7f204c963e6ba05c2e330290 = $(`<div id="html_6ef6a3cf7f204c963e6ba05c2e330290" style="width: 100.0%; height: 100.0%;">Emergency Help Team</div>`)[0];
+                popup_395476fbbef523a3e513f0ded62f1bae.setContent(html_6ef6a3cf7f204c963e6ba05c2e330290);
+            
+        
+
+        marker_ad41059cd2ceec744b04ad1d5808b61f.bindPopup(popup_395476fbbef523a3e513f0ded62f1bae)
+        ;
+
+        
+    
+</script>
+</html>

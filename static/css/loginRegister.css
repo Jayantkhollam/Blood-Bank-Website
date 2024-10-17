@@ -1,0 +1,59 @@
+.bg-gradient {
+  background: linear-gradient(
+    to right,
+    #feb47b,
+    #ff7e5f
+  ); /* Gradient background */
+  color: #111; /* Adjust text color as needed */
+  min-height: 100vh; /* Set minimum height to fill the viewport */
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px; /* Set maximum width for the content */
+  padding: 0 20px; /* Add some padding for better appearance */
+}
+
+.custom-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 90%; /* Set maximum width relative to the viewport */
+  width: 330px; /* Set a fixed width as a fallback */
+  background: #fff;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn.btn-primary.btn-block {
+  background-color: #0c315c;
+  border-color: #007bff;
+  color: #fff;
+  font-weight: bold;
+  width: 70%; /* Set width relative to the parent container */
+  max-width: 200px; /* Set maximum width relative to the viewport */
+}
+
+.btn.btn-primary.btn-block:hover {
+  background-color: #0aa72c;
+  border-color: #0f0f0f;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to right, #feb47b, #ff7e5f);
+  color: #111;
+  padding: 20px 0;
+}

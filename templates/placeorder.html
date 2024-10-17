@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blood Bank Portal</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="/static/css/placeorder.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand logo" href="#">
+      <img src="/static/images/blood logo.jpg" alt="Blood Bank" width="50" height="50">
+    </a>
+    <a class="navbar-brand" href="#">Blood Bank Management</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <button class="btn btn-outline-light" onclick="showHome()">Home</button>
+        </li>
+        <li class="nav-item">
+          <button class="btn btn-outline-light" onclick="showLogin()">Logout</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container mt-5">
+  
+    <div class="col-md-6 offset-md-3">
+      <div class="jumbotron">
+        <h1 class="display-4 glow">Place Order Here</h1>
+        <hr class="my-4">
+        <button class="btn btn-lg btn-primary" onclick="togglePopup()">Order Now</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="popup-container" id="popupContainer">
+  <div class="popup-form ">
+    <h2>Order Form</h2>
+    <form action="/order_details" method="post">
+      <div class="mb-3">
+        <label for="name">Hospital Name:</label>
+        <input type="text" name="name" class="form-control" id="name" required>
+      </div>
+      <div class="mb-3">
+        <label for="address">Address:</label>
+        <input type="text" name="address" class="form-control" id="address" required>
+      </div>
+      <div class="mb-3">
+        <label for="mobile">Mobile Number:</label>
+        <input type="text" name="mobile" class="form-control" id="mobile" required>
+      </div>
+      <div class="mb-3">
+        <label for="email">Email:</label>
+        <input type="email" name="email" class="form-control" id="email" required>
+      </div>
+      <button type="submit" class="btn btn btn-primary">Submit</button>
+      <button type="button" class="btn btn btn-danger" onclick="togglePopup()">Close</button>
+    </form>
+  </div>
+</div>
+
+
+
+<!-- Footer -->
+<footer class="footer mt-3">
+  <div class="container text-center">
+    <span class="text fw-bold"> © 2024 All rights reserved.</span>
+  </div>
+</footer>
+
+
+
+<script>
+  function togglePopup() {
+    const popup = document.getElementById('popupContainer');
+    popup.style.display = popup.style.display === 'none' ? 'flex' : 'none';
+  }
+</script>
+
+
+
+<script>
+  
+  function showHome() {
+      window.location.href = "/index.html";
+  }
+
+  function showLogin() {
+      window.location.href = "/login.html";
+  }
+</script>
+</body>
+</html>

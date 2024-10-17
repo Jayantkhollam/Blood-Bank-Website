@@ -1,0 +1,306 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <title> Blood Bank Portal </title>
+
+
+  <!--  Bootstrap CSS  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="/static/css/Register.css">
+
+
+
+  <!----======== Javascript ======== -->
+
+
+  <script>src = "//cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" </script>
+  <link rel="stylesheet" href="/static/js/script.js">
+
+  <!----======== Jquery slim ======== -->
+
+  <script src="https://code.jquery.com/jquery-3.7.1.slim.js"
+    integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
+
+  <!----===== Boxicons CSS ===== -->
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+
+
+
+  <!-- fork Awesome -->
+  <script src="https://kit.fontawesome.com/d8acde37bb.js" crossorigin="anonymous"></script>
+
+
+
+  <!-- Bootstrap 5 JS CDN Links -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+
+
+
+
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand logo" href="#">
+        <img src="/static/images/blood logo.jpg" alt="Blood Bank" width="50" height="50">
+      </a>
+      <a class="navbar-brand" href="#">Blood Bank Management</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+
+          <li class="nav-item">
+            <button class="btn btn-outline-light" onclick="showHome()">Home</button>
+          </li>
+          <li class="nav-item">
+            <button class="btn btn-outline-light">Contact</button>
+          </li>
+          <li class="nav-item">
+            <button class="btn btn-outline-light" onclick="showLogin()">Login</button>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- reg form -->
+
+
+  <!-- Jumbotron with Registration Form -->
+
+  <!-- Blood Bank Registration Form -->
+  <div id="bloodBankForm" class="jumbotron jumbotron-fluid mt-5 mb-0">
+    <div class="logincontainer">
+      <h2>Blood Bank Registration</h2>
+      <form id="bloodBankRegistrationForm" method="post" action="/register">
+        <div class="mb-3">
+          <label for="bloodBankName">Blood Bank Name:</label>
+          <input type="text" id="bloodBankName" name="bloodBankName" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label for="contactPersonName">Contact Person's Name:</label>
+          <input type="text" id="contactPersonName" name="contactPersonName" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label for="bloodBankEmail">Email Address:</label>
+          <input type="email" id="bloodBankEmail" name="bloodBankEmail" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label for="bloodBankPassword">Password:</label>
+          <input type="password" id="bloodBankPassword" name="bloodBankPassword" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label for="phoneNumber">Phone Number:</label>
+          <input type="tel" id="phoneNumber" name="phoneNumber" class="form-control" required>
+        </div>
+        <div class="mb-3 d-flex justify-content-end">
+          <button type="submit" class="btn btn-primary">Register</button> <!-- Register button -->
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+
+  <!-- Hospital Registration Form -->
+  <div id="hospitalForm" class="jumbotronh jumbotron-fluid mt-5 mb-0">
+    <div class="logincontainerh">
+      <h2>Hospital Registration</h2>
+      <form id="hospitalRegistrationForm" method="post" action="/register">
+        <div class="mb-3">
+          <label for="hospitalName">Hospital Name:</label>
+          <input type="text" id="hospitalName" name="hospitalName" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label for="hospitalContactPersonName">Contact Person's Name:</label>
+          <input type="text" id="hospitalContactPersonName" name="hospitalContactPersonName" class="form-control"
+            required>
+        </div>
+        <div class="mb-3">
+          <label for="hospitalEmail">Email Address:</label>
+          <input type="email" id="hospitalEmail" name="hospitalEmail" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label for="bloodBankPassword">Password:</label>
+          <input type="password" id="bloodBankPassword" name="hospitalPassword" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label for="hospitalPhoneNumber">Phone Number:</label>
+          <input type="tel" id="hospitalPhoneNumber" name="hospitalPhoneNumber" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label for="hospitalLatitude">Latitude:</label>
+          <input type="text" id="hospitalLatitude" name="hospitalLatitude" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label for="hospitalLongitude">Longitude:</label>
+          <input type="text" id="hospitalLongitude" name="hospitalLongitude" class="form-control" required>
+        </div>
+        <div class="mb-3 d-flex justify-content-end">
+          <button type="submit" class="btn btn-primary">Register</button> <!-- Register button -->
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+
+
+
+
+  <!-- Alert message -->
+  <div id="alertMessage" class="alert alert-success d-none" role="alert">
+    <p>{{status}}</p>
+  </div>
+
+
+
+
+
+  <!-- Footer -->
+ <footer class="footer mt-3">
+  <div class="container text-center">
+    <span class="text fw-bold"> © 2024 All rights reserved.</span>
+  </div>
+</footer>
+
+
+
+
+
+
+
+  <!-- java script section  -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Event listener for registration form submission
+      $('#bloodBankRegistrationForm, #hospitalRegistrationForm').submit(function (event) {
+        // Prevent default form submission
+        event.preventDefault();
+
+        // Make an AJAX request to submit the form data
+        $.ajax({
+          url: '/register',
+          type: 'POST',
+          data: $(this).serialize(),
+          success: function (response) {
+            // Update the status message based on the response
+            $('#alertMessage').removeClass('d-none').text(response.status);
+
+            // Redirect after 5 seconds
+            setTimeout(function () {
+              window.location.href = "/register.html";
+            }, 3000);
+          },
+          error: function () {
+            // Handle errors if any
+            console.error('Error occurred during form submission.');
+          }
+        });
+      });
+    });
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<script>
+  function register() {
+    window.location.href = "/register.html";
+  }
+
+  function showHome() {
+    window.location.href = "/index.html";
+  }
+
+  function showLogin() {
+    window.location.href = "/login.html";
+  }
+</script>
+</html>

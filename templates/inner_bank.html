@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Blood Bank Portal </title>
+  <!--  Bootstrap CSS  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/innerbank.css">
+  <!-- SheetJS Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.0/xlsx.full.min.js"></script>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand logo" href="#">
+          <img src="/static/images/blood logo.jpg" alt="Blood Bank" width="50" height="50">
+        </a>
+        <a class="navbar-brand" href="#">Blood Bank Management</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <button class="btn btn-outline-light" onclick="showHome()">Home</button>
+            </li>
+            <li class="nav-item">
+              <button class="btn btn-outline-light">Contact</button>
+            </li>
+            <li class="nav-item">
+              <button class="btn btn-outline-light" onclick="showLogin()">Logout</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <hr>
+  <hr>
+
+
+
+
+
+
+
+
+
+  <!-- Blood Bank Management Form -->
+  <div class="form jumbotron-fluid">
+    <h1>Blood Bank Center</h1>
+    <form id="bloodBankForm" method="post" action="/update_qtt">
+      <div class="mb-3">
+
+        <input type="text" class="form-control" id="bloodBankName" placeholder="Enter Blood Bank Name" oninput="getSuggestions(this.value)" name="bank_name">
+        <div class="suggestions fw-bold text-white" id="suggestions"></div>
+      </div>
+      <div class="mb-3">
+
+        <select class="form-select" id="bloodType" name="blood_type">
+          <option selected disabled>Select Blood Type</option>
+          
+          <option value="O+ve">O+ve</option>
+          <option value="O-ve">O-ve</option>
+          <option value="A+ve">A+ve</option>
+          <option value="A-ve">A-ve</option>
+          <option value="B+ve">B+ve</option>
+          <option value="B-ve">B-ve</option>
+          <option value="AB+ve">AB+ve</option>
+          <option value="AB-ve">AB-ve</option>
+          <option value="OH+ve">OH+ve</option>
+          <option value="OH-ve">OH-ve</option>
+        </select>
+      </div>
+      <div class="mb-3">
+
+        <input type="number" class="form-control" id="quantity" placeholder="Enter Quantity" name="qtt">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+  <div id="excel-table" class="containerexcel"></div>
+  </div>
+
+
+
+
+
+  <script>
+    async function displayExcelContent() {
+      try {
+        const response = await fetch("/static/documents/available_data_for_blood_bank.xlsx");
+        const arrayBuffer = await response.arrayBuffer();
+        // Use SheetJS to read Excel data
+        const workbook = XLSX.read(arrayBuffer, { type: 'array' });
+        const sheet = workbook.Sheets[workbook.SheetNames[0]];
+        // Convert sheet data to HTML table
+        const tableHTML = XLSX.utils.sheet_to_html(sheet);
+        // Display table
+        document.getElementById('excel-table').innerHTML = tableHTML;
+      } catch (error) {
+        console.error('Error fetching and displaying Excel data:', error);
+      }
+    }
+    // Call the function when the page loads
+    displayExcelContent();
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Footer -->
+ <footer class="footer mt-3">
+  <div class="container text-center">
+    <span class="text fw-bold"> © 2024 All rights reserved.</span>
+  </div>
+</footer>
+
+
+
+
+
+</body>
+
+<script>
+  fetch('/static/documents/bank_names.json')
+    .then(response => response.json())
+    .then(suggestions => {
+      window.suggestions = suggestions;
+    });
+
+  function getSuggestions(query) {
+    const filteredSuggestions = window.suggestions.filter(suggestion =>
+      suggestion.toLowerCase().startsWith(query.toLowerCase())
+    );
+
+    const suggestionsDiv = document.getElementById('suggestions');
+    suggestionsDiv.innerHTML = '';
+
+    filteredSuggestions.forEach(suggestion => {
+      const suggestionElement = document.createElement('div');
+      suggestionElement.textContent = suggestion;
+      suggestionElement.addEventListener('click', () => {
+        document.getElementById('bloodBankName').value = suggestion;
+        suggestionsDiv.innerHTML = '';
+      });
+      suggestionsDiv.appendChild(suggestionElement);
+    });
+
+    if (filteredSuggestions.length > 0) {
+      suggestionsDiv.style.display = 'block';
+    } else {
+      suggestionsDiv.style.display = 'none';
+    }
+  }
+
+  document.addEventListener('click', function(event) {
+    const suggestionsDiv = document.getElementById('suggestions');
+    if (!event.target.matches('#bloodBankName')) {
+      suggestionsDiv.style.display = 'none';
+    }
+  });
+</script>
+
+
+
+<script>
+  function register() {
+    window.location.href = "/register.html";
+  }
+
+  function showHome() {
+    window.location.href = "/index.html";
+  }
+
+  function showLogin() {
+    window.location.href = "/login.html";
+  }
+</script>
+
+</html>

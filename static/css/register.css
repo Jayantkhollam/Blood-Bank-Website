@@ -1,0 +1,111 @@
+/* Custom CSS for the registration form and jumbotron */
+.jumbotron {
+  background: linear-gradient(
+    to right,
+    #080808f5,
+    #111111a9
+  ); /* Left to right gradient background */
+  padding: 50px; /* Adjust padding as needed */
+  margin-top: 80px; /* Space between navbar and jumbotron */
+  border-radius: 10px; /* Rounded corners */
+  margin-bottom: 0; /* Remove margin bottom */
+}
+
+.jumbotronh {
+  
+  padding: 50px; /* Adjust padding as needed */
+  margin-top: 0px; /* Space between navbar and jumbotron */
+  border-radius: 10px; /* Rounded corners */
+  margin-bottom: 0; /* Remove margin bottom */
+}
+
+.jumbotron h2 {
+  margin-bottom: 30px; /* Space below heading */
+}
+
+.jumbotronh h2 {
+  margin-bottom: 30px; /* Space below heading */
+}
+
+.form-control {
+  margin-bottom: 20px; /* Space between form inputs */
+}
+
+.logincontainer {
+  max-width: 500px;
+  background-color: rgba(160, 154, 154, 0.233);
+  color: white;
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(2, 2, 2, 0.1); /* Black shadow */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.logincontainerh {
+  max-width: 500px;
+  max-height: 800px;
+
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Black shadow */
+  border-radius: 10px; /* Rounded corners */
+  background: linear-gradient(
+    to right,
+    #78b3ccf5,
+    #b9d3c6a9
+  ); /* Left to right gradient background */
+}
+
+.logincontainer h2 {
+  text-align: center;
+}
+.logincontainerh h2 {
+  text-align: center;
+}
+
+/* Animation for alert message */
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOutLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.alert {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateX(100%);
+  animation: slideInRight 0.5s forwards;
+}
+
+.alert.show {
+  animation: slideOutLeft 0.5s forwards;
+}
+
+
+
+/* Footer Styles */
+.footer {
+  background: linear-gradient(to bottom, #2b2a2a, #1b1b1b);
+  color: rgb(253, 255, 254);
+  padding: 20px 0;
+  width: 100%;
+}
+
+/* Content Area Styles */
+.content {
+  min-height: calc(100vh - 100px); /* Adjust as needed, subtracting the footer height */
+  overflow-y: auto; /* Allow vertical scrolling if content exceeds the viewport height */
+}

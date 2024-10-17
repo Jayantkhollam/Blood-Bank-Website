@@ -1,0 +1,53 @@
+/*  home section 1  starts */
+
+/* Banner Styles */
+.banner {
+  height: 100vh; /* Set full viewport height */
+  background: linear-gradient(to right, #3f2bf5, #77b6ff); /* Gradient background */
+  padding: 10%;
+  transition: color 0.3s ease; /* Add transition for color change */
+}
+
+/* Card Styles */
+.card {
+  text-align: center;
+  background: linear-gradient(to right, #fcfcfc, #d6341e); /* Gradient background */
+}
+
+/* Card Section 1 Styles */
+.card-section1 {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center content horizontally */
+}
+
+
+/* Header styles */
+.home1header {
+  background-color: to right, #4835f1, #1a5ba5;
+  padding: 15px;
+  text-align: center;
+
+  color: white;
+
+  text-align: center;
+  position: relative;
+}
+
+
+/* Footer Styles */
+.footer {
+  background: linear-gradient(to bottom, #2b2a2a, #1b1b1b);
+  color: rgb(253, 255, 254);
+  padding: 20px 0;
+  width: 100%;
+  position: absolute; /* Position the footer absolutely */
+  bottom: 0; /* Stick the footer to the bottom */
+}
+
+/* Content Area Styles */
+.content {
+  min-height: calc(100vh - 100px); /* Adjust as needed, subtracting the footer height */
+  overflow-y: auto; /* Allow vertical scrolling if content exceeds the viewport height */
+}

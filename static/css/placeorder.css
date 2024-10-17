@@ -1,0 +1,94 @@
+body {
+   background-color: #74757985;
+    
+    
+    
+}
+
+.jumbotron {
+    border: 2px solid #050505;
+    box-shadow: 0 0 20px #070707;
+    padding: 2rem;
+    background-color: rgba(8, 8, 8, 0.9);
+    text-align: center;
+    margin-top: 200px;
+    max-width: 700px;
+    
+    position: relative;
+}
+
+.glow {
+    color: #f3f6f8;
+    text-shadow: 0 0 10px #007bff, 0 0 20px #007bff, 0 0 30px #007bff, 0 0 40px #007bff, 0 0 50px #007bff, 0 0 60px #007bff, 0 0 70px #007bff;
+}
+
+.popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure the popup is on top */
+}
+
+.popup-form {
+    background: #eaebe1;
+    color: #111111;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    width: 80%; /* Adjust the width as needed */
+    max-width: 700px; /* Limit the width to avoid overflowing */
+}
+
+.popup-form h2 {
+    color: #030303;
+    text-align: center;
+}
+
+.popup-form label {
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.popup-form input[type="text"],
+.popup-form input[type="email"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.popup-form input[type="submit"],
+.popup-form button {
+    background-color: #377e52;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup-form input[type="submit"]:hover,
+.popup-form button:hover {
+    background-color: #474141;
+}
+
+
+
+
+.footer {
+    background: linear-gradient(to bottom, #2b2a2a, #1b1b1b);
+    color: rgb(233, 243, 238);
+    padding: 20px 0;
+    width: 100%;
+    position: fixed; /* Fixed position */
+    bottom: 0; /* Stick the footer to the bottom */
+  }
+  

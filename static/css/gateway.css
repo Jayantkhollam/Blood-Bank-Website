@@ -1,0 +1,86 @@
+/* General Styles */
+body {
+  background-color: #b3c6da;
+}
+
+.card-header {
+  background-color: #ffffff;
+}
+
+.nav-pills .nav-link {
+  color: #000000;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #1c6627ee !important;
+  color: #ffffff;
+}
+
+.form-control {
+  border: 1px solid #ced4da;
+}
+
+.card-footer {
+  background-color: #ffffff;
+  border-top: 1px solid #ced4da;
+}
+
+.qr-code {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Custom CSS for adjusting tab content */
+.tab-content {
+  padding: 1rem;
+}
+
+.tab-pane {
+  display: none;
+  padding: 1rem;
+}
+
+.tab-pane.show {
+  display: block;
+}
+
+/* Add border and padding to the content of net banking and UPI tabs */
+#net-banking .form-group,
+#quick-pay .form-group {
+  border: 1px solid #ced4da;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+/* Add margin to the buttons in net banking and UPI tabs */
+#net-banking .form-group button,
+#quick-pay .form-group button {
+  margin-top: 0.5rem;
+}
+
+.tab-content .card {
+  background-color: #ffffff; /* White background color */
+  border: none; /* Remove border */
+  border-radius: 0; /* Remove border radius */
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  /* Adjust styles for medium-sized screens */
+  .tab-content,
+  .tab-pane,
+  #net-banking .form-group,
+  #quick-pay .form-group {
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Adjust styles for smaller screens */
+  .tab-content,
+  .tab-pane,
+  #net-banking .form-group,
+  #quick-pay .form-group {
+    padding: 0.25rem;
+  }
+}

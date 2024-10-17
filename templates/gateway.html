@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Form</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/static/css/gateway.css">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+
+    .card-header {
+      background-color: #ffffff;
+    }
+
+    .nav-pills .nav-link {
+      color: #000000;
+    }
+
+    .nav-pills .nav-link.active {
+      background-color: #007bff;
+      color: #ffffff;
+    }
+
+    .form-control {
+      border: 1px solid #ced4da;
+    }
+
+    .card-footer {
+      background-color: #ffffff;
+      border-top: 1px solid #ced4da;
+    }
+
+    .center-btn {
+      text-align: center;
+    }
+
+    .tab-content .card {
+      background-color: #ffffff;
+      border: none;
+      border-radius: 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container py-5">
+    <div class="row mb-4">
+      <div class="col-lg-8 mx-auto text-center ">
+        <h1 class="display-6">Payment Details</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6 mx-auto">
+        <div class="card">
+          <div class="card-header">
+            <div class="bg-white shadow-sm pt-4 pl-2 pr-2 pb-2">
+              <ul role="tablist" class="nav bg-light nav-pills rounded nav-fill mb-3">
+                <li class="nav-item"> <a data-bs-toggle="pill" href="#credit-card" class="nav-link active "> <i
+                      class="fas fa-credit-card mr-2"></i> Credit Card </a> </li>
+
+                <li class="nav-item"> <a data-bs-toggle="pill" href="#net-banking" class="nav-link "> <i
+                      class="fas fa-mobile-alt mr-2"></i> Net Banking </a> </li>
+                <li class="nav-item"> <a data-bs-toggle="pill" href="#upi" class="nav-link "> <i
+                      class="fas fa-qrcode mr-2"></i> UPI </a> </li>
+                <li class="nav-item"> <a data-bs-toggle="pill" href="#bank-transfer" class="nav-link "> <i
+                      class="fas fa-university mr-2"></i> Bank Transfer </a> </li>
+              </ul>
+            </div>
+
+            <div id="credit-card" class="tab-pane fade show active pt-3">
+              <div class="content fw-bold">
+                <p>Enter Credit Card Details</p>
+              </div>
+              <form role="form" action="/recipt" method="post">
+                <div class="form-group">
+                  <label for="cardOwner">Card Owner</label>
+                  <input type="text" id="cardOwner" name="cardOwner" class="form-control" placeholder="Card Owner Name"
+                    required>
+                </div>
+                <div class="form-group">
+                  <label for="cardNumber">Card Number</label>
+                  <div class="input-group">
+                    <input type="text" id="cardNumber" name="cardNumber" class="form-control"
+                      placeholder="Valid card number" required>
+                    <div class="input-group-append">
+                      <span class="input-group-text text-muted">
+                        <i class="fab fa-cc-visa mx-1"></i>
+                        <i class="fab fa-cc-mastercard mx-1"></i>
+                        <i class="fab fa-cc-amex mx-1"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label for="expiryMonth">Expiration Month</label>
+                      <input type="number" id="expiryMonth" name="expiryMonth" class="form-control" placeholder="MM"
+                        required>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label for="expiryYear">Expiration Year</label>
+                      <input type="number" id="expiryYear" name="expiryYear" class="form-control" placeholder="YY"
+                        required>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="cvv">CVV</label>
+                  <input type="text" id="cvv" name="cvv" class="form-control" placeholder="CVV" required>
+                </div>
+                <div class="card-footer center-btn">
+                  <button type="submit" class="subscribe btn btn-primary btn-block shadow-sm">Complete Payment</button>
+                </div>
+              </form>
+            </div>
+
+
+
+            <!-- Net Banking tab content -->
+            <div id="net-banking" class="tab-pane fade pt-3">
+              <!-- Net Banking form -->
+              <form role="form" action="/recipt" method="post">
+                <!-- Net Banking form inputs -->
+                <div class="form-group">
+                  <label for="bank">Select your Bank</label>
+                  <br>
+                  <br>
+                  
+                  <select class="form-control" id="bank" required>
+                    <option value="" disabled selected>-- Please select your Bank --</option>
+                    <option>ICICI</option>
+                    <option>SBI</option>
+                    <option>BOI</option>
+                    <!-- Add more bank options as needed -->
+                  </select>
+                </div>
+                <br>
+                
+                <div class="card-footer center-btn"> <!-- Center the button -->
+                  <button type="submit" class="subscribe btn btn-primary btn-block shadow-sm">
+                    Complete Payment
+                  </button>
+                </div>
+              </form>
+            </div>
+
+
+            <!-- UPI tab content -->
+            <div id="upi" class="tab-pane fade pt-3 mb-2">
+              <!-- UPI form -->
+              <form role="form" action="/recipt" method="post">
+                <!-- UPI ID input -->
+                <div class="form-group mb-2">
+                  <label for="upiId">UPI ID</label>
+                  <br>
+                  
+                  <input type="text" id="upiId" name="upiId" class="form-control" placeholder="Enter your UPI ID"
+                    required>
+                </div>
+                <!-- QR Code display -->
+                <div class="form-group text-center mb-2">
+                  <img src="/static/images/dummyqr.png" alt="QR Code" class="img-fluid" style="max-width: 180px;">
+                </div>
+                <br>
+                
+                <div class="card-footer center-btn ">
+                  <button type="submit" class="subscribe btn btn-primary btn-block shadow-sm">Complete Payment</button>
+                </div>
+              </form>
+            </div>
+
+
+            <!-- Bank Transfer tab content -->
+            <div id="bank-transfer" class="tab-pane fade pt-3">
+              <!-- Bank Transfer form -->
+              <form role="form" action="/recipt" method="post" >
+                <!-- Bank account details input -->
+                <div class="form-group">
+                  <label for="accountNumber">Account Number</label>
+                  <input type="text" id="accountNumber" name="accountNumber" class="form-control"
+                    placeholder="Enter your account number" required>
+                </div>
+                <div class="form-group">
+                  <label for="ifscCode">IFSC Code</label>
+                  <input type="text" id="ifscCode" name="ifscCode" class="form-control" placeholder="Enter IFSC code"
+                    required>
+                </div>
+                <div class="card-footer center-btn">
+                  <button type="submit" class="subscribe btn btn-primary btn-block shadow-sm">Complete Payment</button>
+                </div>
+              </form>
+            </div>
+
+
+
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="footer text-center  md-0">
+    <p>© 2024 Blood Bank. All Rights Reserved.</p>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.nav-pills a').on('click', function (e) {
+        e.preventDefault();
+        $(this).tab('show');
+      });
+    });
+  </script>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>     

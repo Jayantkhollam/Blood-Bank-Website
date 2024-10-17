@@ -1,0 +1,55 @@
+/* Form Styles */
+.form {
+  text-align: center;
+  background: linear-gradient(to bottom, #1c1c1d, #e5e6ec);
+  width: 90%; /* Adjust the width for better responsiveness */
+  max-width: 400px; /* Set maximum width for larger screens */
+  margin: 50px auto; /* Center the form horizontally and adjust top margin */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(22, 22, 22, 0.925);
+}
+
+.form-header {
+  padding: 20px;
+}
+
+.form h1 {
+  margin-bottom: 20px; /* Add margin below the header */
+  color: #02ff02;
+}
+
+/* Excel Container Styles */
+.containerexcel {
+  margin-top: 50px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(22, 22, 22, 0.925);
+  width: 90%; /* Adjust the width for better responsiveness */
+  max-width: 1200px; /* Set maximum width for larger screens */
+  max-height: 500px;
+  overflow: auto;
+  background: linear-gradient(to bottom, #dcdce2, #e5e6ec);
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+/* Jumbotron Heading Styles */
+.jumbotron-fluid h1 {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  margin-bottom: 0;
+}
+
+/* Footer Styles */
+.footer {
+  background: linear-gradient(to bottom, #dcdce2, #e5e6ec);
+  padding: 20px 0;
+  width: 100%;
+}
+
+/* Content Styles */
+.content {
+  min-height: calc(100vh - 170px); /* Adjust as needed */
+  overflow-y: auto;
+}
